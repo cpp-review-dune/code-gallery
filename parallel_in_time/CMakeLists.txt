@@ -1,11 +1,11 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.3.0)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.13.4)
 
 PROJECT("parallel_in_time")
 
 #
 # setup deal.II
 #
-FIND_PACKAGE(deal.II 9.4.0
+FIND_PACKAGE(deal.II 9.5.0
   HINTS ${deal.II_DIR} ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
   )
 IF(NOT ${deal.II_FOUND})
